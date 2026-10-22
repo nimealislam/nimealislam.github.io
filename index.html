@@ -4,149 +4,310 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#064e3b">
   <meta name="description" content="মোহাম্মদ নাঈম ইসলাম জিহানের ব্যক্তিগত ওয়েবসাইট">
   <title>মোহাম্মদ নাঈম ইসলাম জিহান</title>
+
   <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, "Noto Sans Bengali", sans-serif;
-      background: #f4f7f6;
-      color: #25332e;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 75px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f6f3;
+      color: #23352d;
       line-height: 1.8;
     }
+
     nav {
-      background: #073f35;
-      padding: 14px 10px;
-      text-align: center;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
+      background: #064e3b;
+      padding: 14px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 3px 12px #0002;
     }
-    nav a {
-      color: white;
+
+    .brand {
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 12px;
+    }
+
+    .menu a {
+      color: #fff;
       text-decoration: none;
-      margin: 0 10px;
-      font-size: 14px;
+      font-size: 13px;
     }
-    header {
-      background: linear-gradient(135deg, #087f5b, #064e43);
+
+    .hero {
+      background: linear-gradient(140deg, #10a36d, #064e3b);
       color: white;
       text-align: center;
-      padding: 48px 18px 55px;
+      padding: 45px 16px 50px;
     }
+
     .profile {
-      width: 155px;
-      height: 155px;
-      object-fit: cover;
-      object-position: center 25%;
+      width: 145px;
+      height: 145px;
       border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
       border: 5px solid white;
-      box-shadow: 0 5px 22px #002c2450;
+      box-shadow: 0 6px 22px #0003;
+      background: #dceee5;
     }
+
     h1 {
-      font-size: 27px;
-      line-height: 1.6;
-      margin: 18px 0 4px;
+      font-size: 25px;
+      line-height: 1.7;
+      margin: 15px 0 5px;
     }
-    header p { margin: 5px 0 22px; }
-    .btn {
+
+    .hero p {
+      color: #e0f7eb;
+      margin-bottom: 18px;
+    }
+
+    .button {
       display: inline-block;
-      padding: 10px 22px;
+      text-decoration: none;
+      padding: 10px 18px;
+      margin: 5px 3px;
       border-radius: 30px;
       background: white;
       color: #087f5b;
-      text-decoration: none;
       font-weight: bold;
-      margin: 5px;
+      font-size: 14px;
     }
+
+    .button-light {
+      background: #c9f5dc;
+      color: #064e3b;
+    }
+
     main {
-      max-width: 720px;
+      width: 100%;
+      max-width: 760px;
       margin: auto;
-      padding: 18px;
+      padding: 15px;
     }
+
     .card {
       background: white;
       border-radius: 18px;
-      padding: 25px 22px;
-      margin: 22px 0;
-      box-shadow: 0 5px 22px #173b3010;
+      padding: 25px 20px;
+      margin: 20px 0;
       text-align: center;
+      border: 1px solid #e1ebe5;
+      box-shadow: 0 5px 22px #173b2d0c;
     }
-    h2 { color: #087f5b; margin-top: 0; }
-    .contact {
-      display: block;
-      padding: 11px;
-      margin: 12px auto;
-      max-width: 300px;
-      border-radius: 10px;
-      text-decoration: none;
-      background: #e8f7ef;
+
+    h2 {
       color: #087f5b;
-      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 12px;
     }
-    footer {
-      background: #073f35;
-      color: white;
-      text-align: center;
-      padding: 22px 12px;
+
+    .card p {
+      margin: 8px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e5f6ec;
+      color: #08734e;
+      border-radius: 25px;
+      padding: 5px 12px;
+      margin: 4px;
       font-size: 14px;
     }
-    footer p { margin: 5px; }
+
+    .contact {
+      display: block;
+      width: 100%;
+      max-width: 340px;
+      margin: 13px auto;
+      padding: 12px 15px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .whatsapp {
+      background: #e2f8e9;
+      color: #087a43;
+      border: 1px solid #c5ebd0;
+    }
+
+    .facebook {
+      background: #eaf0ff;
+      color: #2450a9;
+      border: 1px solid #d6e0ff;
+    }
+
+    .contact-note {
+      color: #68776e;
+      font-size: 13px;
+    }
+
+    footer {
+      background: #063b2e;
+      color: white;
+      text-align: center;
+      padding: 27px 15px;
+      margin-top: 15px;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #b8f0d3;
+      text-decoration: none;
+    }
+
+    @media (max-width: 390px) {
+      .brand {
+        font-size: 13px;
+      }
+
+      .menu {
+        gap: 8px;
+      }
+
+      .menu a {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .profile {
+        width: 125px;
+        height: 125px;
+      }
+
+      .card {
+        padding: 22px 15px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <nav>
-    <a href="#home">হোম</a>
-    <a href="#about">পরিচিতি</a>
-    <a href="#contact">যোগাযোগ</a>
+    <div class="brand">Nime Islam JEHAN</div>
+    <div class="menu">
+      <a href="#home">হোম</a>
+      <a href="#about">পরিচিতি</a>
+      <a href="#contact">যোগাযোগ</a>
+    </div>
   </nav>
 
-  <header id="home">
-    <img class="profile" src="profile.jpg"
-         alt="মোহাম্মদ নাঈম ইসলাম জিহানের ছবি">
+  <header class="hero" id="home">
+
+    <!-- ছবি যোগ করতে profile.jpg নামে ছবি আপলোড করুন -->
+    <img
+      class="profile"
+      src="profile.jpg"
+      alt="মোহাম্মদ নাঈম ইসলাম জিহান"
+      onerror="this.style.display='none'"
+    >
+
     <h1>মোহাম্মদ নাঈম ইসলাম জিহান</h1>
-    <p>আমার ব্যক্তিগত ওয়েবসাইটে স্বাগতম</p>
-    <a class="btn" href="#about">আমার সম্পর্কে</a>
-    <a class="btn" href="#contact">যোগাযোগ করুন</a>
+    <p>আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম</p>
+
+    <a class="button button-light" href="#about">
+      আমার সম্পর্কে
+    </a>
+
+    <a class="button" href="#contact">
+      যোগাযোগ করুন
+    </a>
+
   </header>
 
   <main>
+
     <section class="card" id="about">
-      <h2>আমার পরিচয়</h2>
-      <p>আসসালামু আলাইকুম। আমি মোহাম্মদ নাঈম ইসলাম জিহান।
-      এটি আমার ব্যক্তিগত ওয়েবসাইট। এখানে আমার পরিচিতি
-      ও যোগাযোগের তথ্য দেওয়া হয়েছে।</p>
+      <h2>👋 আমার পরিচয়</h2>
+
+      <p>আসসালামু আলাইকুম।</p>
+
+      <p>
+        আমি মোহাম্মদ নাঈম ইসলাম জিহান।
+        এটি আমার ব্যক্তিগত ওয়েবসাইট।
+        এখানে আমার পরিচিতি ও যোগাযোগের মাধ্যমগুলো দেওয়া হয়েছে।
+      </p>
+
       <p>আমার ওয়েবসাইটে আপনাকে স্বাগতম।</p>
     </section>
 
+    <section class="card" id="skills">
+      <h2>✨ আমার দক্ষতা ও আগ্রহ</h2>
+
+      <span class="tag">ইলেকট্রিক্যাল কাজ</span>
+      <span class="tag">ডেলিভারি সার্ভিস</span>
+      <span class="tag">প্রযুক্তি</span>
+      <span class="tag">নতুন কিছু শেখা</span>
+    </section>
+
     <section class="card" id="contact">
-      <h2>আমার সঙ্গে যোগাযোগ</h2>
-      <p>যোগাযোগ করতে নিচের মাধ্যমগুলো ব্যবহার করুন।</p>
-      <a class="contact"
-         href="https://wa.me/8801884367197"
-         target="_blank" rel="noopener">
+      <h2>📞 আমার সঙ্গে যোগাযোগ</h2>
+
+      <p>যোগাযোগ করতে নিচের বাটনে চাপ দিন।</p>
+
+      <a
+        class="contact whatsapp"
+        href="https://wa.me/8801884367197"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         WhatsApp-এ যোগাযোগ করুন
       </a>
-      <a class="contact"
-         href=
-<a class="contact facebook"
-   https://www.facebook.com/share/19REnhFz7f/
-   target="_blank" rel="noopener">
-   Facebook — https://www.facebook.com/share/19REnhFz7f/
+
+      <a
+        class="contact facebook"
+        href="https://www.facebook.com/share/19REnhFz7f/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook — Nime Islam JEHAN
       </a>
-      
-         target="_blank" rel="noopener">
-        Facebook খুলুন
-      </a>
+
+      <p class="contact-note">
+        Facebook বাটনে চাপ দিলে তোমার দেওয়া লিংকটি খুলবে।
+      </p>
     </section>
+
   </main>
 
   <footer>
-    <p>© 2026 মোহাম্মদ নাঈম ইসলাম জিহান</p>
+    <p><strong>মোহাম্মদ নাঈম ইসলাম জিহান</strong></p>
     <p>আমার ব্যক্তিগত ওয়েবসাইট</p>
+    <p>© 2026 সর্বস্বত্ব সংরক্ষিত</p>
+    <p><a href="#home">↑ উপরে ফিরে যান</a></p>
   </footer>
 
 </body>
