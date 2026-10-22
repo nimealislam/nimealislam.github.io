@@ -2,313 +2,337 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#064e3b">
-  <meta name="description" content="মোহাম্মদ নাঈম ইসলাম জিহানের ব্যক্তিগত ওয়েবসাইট">
-  <title>মোহাম্মদ নাঈম ইসলাম জিহান</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#030b18">
+<meta name="description" content="Mohammad Naim Islam JEHAN - Personal Portfolio">
+<title>Naim Islam JEHAN | Official Portfolio</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 75px;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f1f6f3;
-      color: #23352d;
-      line-height: 1.8;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: #064e3b;
-      padding: 14px 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 3px 12px #0002;
-    }
-
-    .brand {
-      color: #fff;
-      font-size: 15px;
-      font-weight: bold;
-    }
-
-    .menu {
-      display: flex;
-      gap: 12px;
-    }
-
-    .menu a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 13px;
-    }
-
-    .hero {
-      background: linear-gradient(140deg, #10a36d, #064e3b);
-      color: white;
-      text-align: center;
-      padding: 45px 16px 50px;
-    }
-
-    .profile {
-      width: 145px;
-      height: 145px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center;
-      border: 5px solid white;
-      box-shadow: 0 6px 22px #0003;
-      background: #dceee5;
-    }
-
-    h1 {
-      font-size: 25px;
-      line-height: 1.7;
-      margin: 15px 0 5px;
-    }
-
-    .hero p {
-      color: #e0f7eb;
-      margin-bottom: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      text-decoration: none;
-      padding: 10px 18px;
-      margin: 5px 3px;
-      border-radius: 30px;
-      background: white;
-      color: #087f5b;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .button-light {
-      background: #c9f5dc;
-      color: #064e3b;
-    }
-
-    main {
-      width: 100%;
-      max-width: 760px;
-      margin: auto;
-      padding: 15px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 18px;
-      padding: 25px 20px;
-      margin: 20px 0;
-      text-align: center;
-      border: 1px solid #e1ebe5;
-      box-shadow: 0 5px 22px #173b2d0c;
-    }
-
-    h2 {
-      color: #087f5b;
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      margin: 8px 0;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #e5f6ec;
-      color: #08734e;
-      border-radius: 25px;
-      padding: 5px 12px;
-      margin: 4px;
-      font-size: 14px;
-    }
-
-    .contact {
-      display: block;
-      width: 100%;
-      max-width: 340px;
-      margin: 13px auto;
-      padding: 12px 15px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .whatsapp {
-      background: #e2f8e9;
-      color: #087a43;
-      border: 1px solid #c5ebd0;
-    }
-
-    .facebook {
-      background: #eaf0ff;
-      color: #2450a9;
-      border: 1px solid #d6e0ff;
-    }
-
-    .contact-note {
-      color: #68776e;
-      font-size: 13px;
-    }
-
-    footer {
-      background: #063b2e;
-      color: white;
-      text-align: center;
-      padding: 27px 15px;
-      margin-top: 15px;
-    }
-
-    footer p {
-      margin: 5px 0;
-      font-size: 14px;
-    }
-
-    footer a {
-      color: #b8f0d3;
-      text-decoration: none;
-    }
-
-    @media (max-width: 390px) {
-      .brand {
-        font-size: 13px;
-      }
-
-      .menu {
-        gap: 8px;
-      }
-
-      .menu a {
-        font-size: 12px;
-      }
-
-      h1 {
-        font-size: 22px;
-      }
-
-      .profile {
-        width: 125px;
-        height: 125px;
-      }
-
-      .card {
-        padding: 22px 15px;
-      }
-    }
-  </style>
+<style>
+:root {
+  --bg:#030b18;
+  --panel:#09182b;
+  --blue:#1684ff;
+  --cyan:#00d5ff;
+  --purple:#8b5cf6;
+  --white:#f5f8ff;
+  --muted:#9aabc2;
+  --line:#17324d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  background:var(--bg);color:var(--white);
+  font-family:"Inter","Hind Siliguri",sans-serif;
+  line-height:1.8;overflow-wrap:anywhere
+}
+a{transition:.25s}
+a:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+.container{width:min(1120px,92%);margin:auto}
+header{
+  position:sticky;top:0;z-index:20;
+  background:#030b18ee;backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line)
+}
+.nav{
+  min-height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:15px
+}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:white}
+.logo-icon{
+  font-size:25px;font-weight:800;color:var(--cyan);
+  border-right:2px solid var(--blue);padding-right:12px
+}
+.logo strong{display:block;font-size:15px}
+.logo small{color:var(--muted);font-size:12px}
+.menu{display:flex;gap:20px;flex-wrap:wrap}
+.menu a{color:#d9e6fa;text-decoration:none;font-size:13px}
+.menu a:hover{color:var(--cyan)}
+.hero{
+  padding:65px 0 55px;position:relative;overflow:hidden;
+  background:radial-gradient(ellipse at 80% 30%,#123b70 0,transparent 48%),
+             linear-gradient(120deg,#041225,#06152a 60%,#071024)
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:35px}
+.eyebrow{color:var(--cyan);font-weight:600;letter-spacing:2px;font-size:13px}
+h1{font-size:clamp(32px,5vw,57px);line-height:1.22;margin:15px 0}
+.gradient-text{
+  background:linear-gradient(90deg,#00d5ff,#3587ff,#b58aff);
+  color:transparent;background-clip:text;-webkit-background-clip:text
+}
+.intro{color:#c5d4e9;max-width:570px;font-size:16px;margin:17px 0 24px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  border-radius:30px;padding:11px 19px;text-decoration:none;
+  font-weight:700;font-size:14px
+}
+.btn-primary{color:white;background:linear-gradient(100deg,#087dff,#7548ef)}
+.btn-outline{color:white;border:1px solid #258cff;background:#07172a}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.portrait-wrap{display:flex;justify-content:center;position:relative}
+.portrait-ring{
+  width:min(330px,75vw);aspect-ratio:1;border-radius:50%;padding:6px;
+  background:linear-gradient(135deg,#00d5ff,#237aff,#9b5cff);
+  box-shadow:0 0 45px #1684ff40
+}
+.portrait{
+  width:100%;height:100%;object-fit:cover;object-position:center 25%;
+  border-radius:50%;border:4px solid #081629;background:#10233b
+}
+.status{
+  position:absolute;bottom:13px;right:0;background:#0b1a30;
+  border:1px solid #244568;border-radius:16px;padding:10px 15px;
+  font-size:12px;box-shadow:0 8px 30px #0006
+}
+.status span{color:#39e6ad}
+.quick-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:13px;margin:28px auto
+}
+.quick{
+  padding:17px;background:linear-gradient(145deg,#0b1b30,#071324);
+  border:1px solid var(--line);border-radius:16px;min-width:0
+}
+.quick small{display:block;color:var(--cyan);font-size:12px}
+.quick strong{font-size:13px;overflow-wrap:anywhere}
+.section{padding:30px 0}
+.section-title{font-size:26px;margin-bottom:8px}
+.section-sub{color:var(--muted);margin-bottom:22px;font-size:14px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{
+  padding:25px;border:1px solid var(--line);border-radius:20px;
+  background:linear-gradient(145deg,#0a1b30,#061120)
+}
+.panel h3{font-size:21px;margin-bottom:14px}
+.panel p{color:#c5d4e9;font-size:14px}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}
+.tag{
+  padding:7px 12px;border:1px solid #155b83;border-radius:30px;
+  color:#d8efff;background:#071c30;font-size:13px
+}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.service{
+  padding:21px 15px;border:1px solid var(--line);border-radius:17px;
+  background:#09182a;text-align:center
+}
+.service .emoji{font-size:28px}
+.service h3{font-size:15px;margin:9px 0}
+.service p{font-size:12px;color:var(--muted)}
+.contact-banner{
+  margin:28px 0 42px;padding:32px;border-radius:22px;
+  border:1px solid #175f9d;
+  background:radial-gradient(ellipse at 90% 10%,#174c85,transparent 55%),
+             linear-gradient(120deg,#0a2d50,#09172a)
+}
+.contact-banner h2{font-size:27px}
+.contact-banner p{color:#d0deef;margin:8px 0 18px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+footer a{color:var(--cyan);text-decoration:none}
+@media(max-width:760px){
+  .nav{padding:12px 0;align-items:flex-start}
+  .menu{max-width:180px;justify-content:flex-end;gap:8px 13px}
+  .hero{padding:42px 0}
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .intro{margin-left:auto;margin-right:auto}
+  .actions{justify-content:center}
+  .portrait-wrap{grid-row:1}
+  .portrait-ring{width:205px}
+  .status{right:calc(50% - 120px)}
+  .quick-grid{grid-template-columns:repeat(2,1fr)}
+  .two-col{grid-template-columns:1fr}
+  .service-grid{grid-template-columns:repeat(2,1fr)}
+  .panel{padding:21px}
+  .contact-banner{padding:24px 19px}
+}
+@media(max-width:370px){
+  .logo strong{font-size:12px}
+  .logo small{font-size:10px}
+  .menu a{font-size:11px}
+  .quick{padding:12px}
+}
+</style>
 </head>
 
 <body>
 
-  <nav>
-    <div class="brand">Nime Islam JEHAN</div>
-    <div class="menu">
-      <a href="#home">হোম</a>
-      <a href="#about">পরিচিতি</a>
-      <a href="#contact">যোগাযোগ</a>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">
+      <span class="logo-icon">NJ</span>
+      <span>
+        <strong>Nime Islam JEHAN</strong>
+        <small>Personal Portfolio</small>
+      </span>
+    </a>
+    <nav class="menu" aria-label="Main menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">WELCOME TO MY WORLD ✦</div>
+      <h1>
+        Mohammad Naim Islam
+        <span class="gradient-text">JEHAN</span>
+      </h1>
+      <p class="intro">
+        আসসালামু আলাইকুম! আমার ব্যক্তিগত ওয়েবসাইটে
+        আপনাকে স্বাগতম। এখানে আমার পরিচিতি, দক্ষতা
+        এবং যোগাযোগের মাধ্যমগুলো এক জায়গায় পাবেন।
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary"
+           href="https://wa.me/8801884367197"
+           target="_blank" rel="noopener noreferrer">
+          ☎ WhatsApp ↗
+        </a>
+        <a class="btn btn-outline"
+           href="https://www.facebook.com/share/19REnhFz7f/"
+           target="_blank" rel="noopener noreferrer">
+          f Facebook ↗
+        </a>
+      </div>
     </div>
-  </nav>
 
-  <header class="hero" id="home">
+    <div class="portrait-wrap">
+      <div class="portrait-ring">
+        <img class="portrait" src="profile.jpg"
+             alt="Mohammad Naim Islam JEHAN"
+             onerror="this.onerror=null;this.src='https://placehold.co/500x500/10233b/00d5ff?text=NI+JEHAN'">
+      </div>
+      <div class="status"><span>●</span> Personal Profile</div>
+    </div>
+  </div>
+</section>
 
-    <!-- ছবি যোগ করতে profile.jpg নামে ছবি আপলোড করুন -->
-    <img
-      class="profile"
-      src="profile.jpg"
-      alt="মোহাম্মদ নাঈম ইসলাম জিহান"
-      onerror="this.style.display='none'"
-    >
+<main class="container">
 
-    <h1>মোহাম্মদ নাঈম ইসলাম জিহান</h1>
-    <p>আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম</p>
+  <section class="quick-grid" aria-label="Profile information">
+    <div class="quick">
+      <small>FULL NAME</small>
+      <strong>Mohammad Naim Islam JEHAN</strong>
+    </div>
+    <div class="quick">
+      <small>PHONE</small>
+      <strong>+8801884367197</strong>
+    </div>
+    <div class="quick">
+      <small>LOCATION</small>
+      <strong>Sherpur, Bangladesh</strong>
+    </div>
+    <div class="quick">
+      <small>PROFESSION</small>
+      <strong>Delivery & Electrical Work</strong>
+    </div>
+  </section>
 
-    <a class="button button-light" href="#about">
-      আমার সম্পর্কে
-    </a>
+  <section class="section" id="about">
+    <div class="two-col">
+      <article class="panel">
+        <h3>👤 About Me</h3>
+        <p>
+          আমি মোহাম্মদ নাঈম ইসলাম জিহান।
+          এটি আমার ব্যক্তিগত পোর্টফোলিও ওয়েবসাইট।
+          এখানে আমার পরিচিতি, আগ্রহ এবং যোগাযোগের
+          লিংকগুলো সুন্দরভাবে সাজানো হয়েছে।
+        </p>
+        <div class="tags">
+          <span class="tag">Bangladesh</span>
+          <span class="tag">Personal Website</span>
+          <span class="tag">Self Learning</span>
+        </div>
+      </article>
 
-    <a class="button" href="#contact">
-      যোগাযোগ করুন
-    </a>
+      <article class="panel" id="skills">
+        <h3>⚡ My Skills</h3>
+        <p>আমার কাজের অভিজ্ঞতা ও আগ্রহের ক্ষেত্রগুলো:</p>
+        <div class="tags">
+          <span class="tag">⚡ Electrical Work</span>
+          <span class="tag">🏍 Delivery Service</span>
+          <span class="tag">💻 Technology</span>
+          <span class="tag">💡 Problem Solving</span>
+          <span class="tag">📚 Self Learning</span>
+        </div>
+      </article>
+    </div>
+  </section>
 
-  </header>
+  <section class="section" id="services">
+    <h2 class="section-title">My Interests & Activities</h2>
+    <p class="section-sub">আমার পছন্দের কাজ ও আগ্রহের ক্ষেত্র</p>
 
-  <main>
+    <div class="service-grid">
+      <article class="service">
+        <div class="emoji">⚡</div>
+        <h3>Electrical Work</h3>
+        <p>বৈদ্যুতিক কাজ ও সার্ভিস</p>
+      </article>
+      <article class="service">
+        <div class="emoji">🏍️</div>
+        <h3>Delivery Service</h3>
+        <p>কুরিয়ার ও ডেলিভারি</p>
+      </article>
+      <article class="service">
+        <div class="emoji">🌱</div>
+        <h3>Agriculture</h3>
+        <p>কৃষি ও খামার</p>
+      </article>
+      <article class="service">
+        <div class="emoji">💻</div>
+        <h3>Technology</h3>
+        <p>ডিজিটাল কাজ ও শেখা</p>
+      </article>
+    </div>
+  </section>
 
-    <section class="card" id="about">
-      <h2>👋 আমার পরিচয়</h2>
-
-      <p>আসসালামু আলাইকুম।</p>
-
-      <p>
-        আমি মোহাম্মদ নাঈম ইসলাম জিহান।
-        এটি আমার ব্যক্তিগত ওয়েবসাইট।
-        এখানে আমার পরিচিতি ও যোগাযোগের মাধ্যমগুলো দেওয়া হয়েছে।
-      </p>
-
-      <p>আমার ওয়েবসাইটে আপনাকে স্বাগতম।</p>
-    </section>
-
-    <section class="card" id="skills">
-      <h2>✨ আমার দক্ষতা ও আগ্রহ</h2>
-
-      <span class="tag">ইলেকট্রিক্যাল কাজ</span>
-      <span class="tag">ডেলিভারি সার্ভিস</span>
-      <span class="tag">প্রযুক্তি</span>
-      <span class="tag">নতুন কিছু শেখা</span>
-    </section>
-
-    <section class="card" id="contact">
-      <h2>📞 আমার সঙ্গে যোগাযোগ</h2>
-
-      <p>যোগাযোগ করতে নিচের বাটনে চাপ দিন।</p>
-
-      <a
-        class="contact whatsapp"
-        href="https://wa.me/8801884367197"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        WhatsApp-এ যোগাযোগ করুন
+  <section class="contact-banner" id="contact">
+    <h2>Let's Connect ✦</h2>
+    <p>
+      আমার সঙ্গে যোগাযোগ করতে অথবা আমার Facebook
+      প্রোফাইল দেখতে নিচের বাটনে চাপ দিন।
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary"
+         href="https://wa.me/8801884367197"
+         target="_blank" rel="noopener noreferrer">
+        WhatsApp-এ যোগাযোগ ↗
       </a>
-
-      <a
-        class="contact facebook"
-        href="https://www.facebook.com/share/19REnhFz7f/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Facebook — Nime Islam JEHAN
+      <a class="btn btn-outline"
+         href="https://www.facebook.com/share/19REnhFz7f/"
+         target="_blank" rel="noopener noreferrer">
+        Facebook Profile ↗
       </a>
+    </div>
+  </section>
 
-      <p class="contact-note">
-        Facebook বাটনে চাপ দিলে তোমার দেওয়া লিংকটি খুলবে।
-      </p>
-    </section>
+</main>
 
-  </main>
-
-  <footer>
-    <p><strong>মোহাম্মদ নাঈম ইসলাম জিহান</strong></p>
-    <p>আমার ব্যক্তিগত ওয়েবসাইট</p>
-    <p>© 2026 সর্বস্বত্ব সংরক্ষিত</p>
-    <p><a href="#home">↑ উপরে ফিরে যান</a></p>
-  </footer>
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <strong>Nime Islam JEHAN</strong><br>
+      Personal Website
+    </div>
+    <div>
+      <a href="#home">Home</a> ·
+      <a href="#about">About</a> ·
+      <a href="#contact">Contact</a>
+    </div>
+    <div>© 2026 Nime Islam JEHAN</div>
+  </div>
+</footer>
 
 </body>
 </html>
